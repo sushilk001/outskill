@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAG System - Access Instructions</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            color: #333;
+        }
+        h1 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .option {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+        }
+        .button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 5px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .button:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .button.secondary {
+            background: #28a745;
+        }
+        .button.secondary:hover {
+            background: #218838;
+        }
+        .status {
+            text-align: center;
+            padding: 15px;
+            background: #28a745;
+            color: white;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .code {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+        .troubleshoot {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 RAG System - Interactive UI Access</h1>
+        
+        <div class="status">
+            ✅ System is Ready!
+        </div>
+
+        <div class="option">
+            <h2>🌟 Option 1: Streamlit UI (Recommended)</h2>
+            <p><strong>Modern chat interface with beautiful design</strong></p>
+            <p>Click the button below to open in your browser:</p>
+            <a href="http://localhost:8501" class="button" target="_blank">
+                Open Streamlit UI
+            </a>
+            <p style="margin-top: 15px;">Or manually open: <code>http://localhost:8501</code></p>
+        </div>
+
+        <div class="option">
+            <h2>🎯 Option 2: Gradio UI (Alternative)</h2>
+            <p><strong>Simple and clean interface</strong></p>
+            <p>First, start Gradio by running in terminal:</p>
+            <div class="code">python app_gradio.py</div>
+            <p>Then click:</p>
+            <a href="http://localhost:7860" class="button secondary">
+                Open Gradio UI
+            </a>
+            <p style="margin-top: 15px;">Or manually open: <code>http://localhost:7860</code></p>
+        </div>
+
+        <div class="troubleshoot">
+            <h3>🔧 Troubleshooting Chrome Issues:</h3>
+            <ul>
+                <li><strong>Clear browser cache:</strong> Press Ctrl+Shift+Delete (Windows) or Cmd+Shift+Delete (Mac)</li>
+                <li><strong>Try incognito mode:</strong> Press Ctrl+Shift+N (Windows) or Cmd+Shift+N (Mac)</li>
+                <li><strong>Disable extensions:</strong> Some extensions may block local apps</li>
+                <li><strong>Check URL:</strong> Make sure you're using <code>http://</code> not <code>https://</code></li>
+                <li><strong>Try another browser:</strong> Firefox, Safari, or Edge as alternatives</li>
+            </ul>
+        </div>
+
+        <div class="option">
+            <h2>📝 Quick Commands</h2>
+            <p>Start Streamlit:</p>
+            <div class="code">streamlit run app.py</div>
+            
+            <p>Start Gradio:</p>
+            <div class="code">python app_gradio.py</div>
+            
+            <p>Stop Streamlit:</p>
+            <div class="code">pkill -f streamlit</div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; padding: 20px; background: #e8f4f8; border-radius: 8px;">
+            <p style="margin: 0; font-size: 14px; color: #555;">
+                💡 <strong>Tip:</strong> If one UI doesn't work, try the other! Both provide the same functionality.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
